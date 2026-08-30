@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dBNext — Journal des versions</title>
+<style>
+  :root {
+    color-scheme: light;
+    --navy: #1E3A5F; --blue: #2B7BB9; --blue-soft: #5BA3D9;
+    --bg: #EDF1F6; --surface: #FFFFFF; --text-1: #1B2638; --text-2: #64748B; --border: #EAEEF3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text-1);
+    font-family: "Segoe UI", "Century Gothic", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  header.hero {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    color: #fff; padding: 48px 24px 40px;
+  }
+  header.hero h1 { margin: 0 0 6px; font-size: 1.9rem; }
+  header.hero p { margin: 0; color: rgba(255,255,255,.82); max-width: 640px; }
+  main { max-width: 720px; margin: -24px auto 60px; padding: 0 20px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 22px 26px; margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(30,58,95,.08);
+  }
+  .card header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--border);
+    padding-bottom: 10px; margin-bottom: 12px;
+  }
+  .card h2 { margin: 0; font-size: 1.15rem; color: var(--navy); }
+  .card time { color: var(--text-2); font-size: .85rem; }
+  .badge {
+    display: inline-block; margin-left: 8px; padding: 2px 9px;
+    background: var(--blue-soft); color: #fff; border-radius: 999px;
+    font-size: .68rem; font-weight: 600; vertical-align: middle;
+  }
+  ul { margin: 0; padding-left: 1.2rem; }
+  li { margin: 6px 0; }
+  li.muted { color: var(--text-2); font-style: italic; list-style: none; margin-left: -1.2rem; }
+  footer { text-align: center; color: var(--text-2); font-size: .8rem; padding: 20px; }
+  footer a { color: var(--blue); }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <h1>dBNext — Journal des versions</h1>
+    <p>Ce qui change pour vous à chaque mise à jour. dBNext se met à jour
+       automatiquement au lancement dès qu'une nouvelle version est
+       disponible.</p>
+  </header>
+  <main>
+
+      <article class="card">
+        <header>
+          <h2>dBNext X.Y.Z <span class="badge">Dernière version</span></h2>
+          <time>AAAA-MM-JJ</time>
+        </header>
+        <ul>
+<li>Ce qui a changé, en une ligne compréhensible sans contexte technique.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <header>
+          <h2>dBNext 1.0.85 </h2>
+          <time>2026-08-30</time>
+        </header>
+        <ul>
+<li>Export SIG (AcoustiBox) : deux zones de rayon distinctes pour les bâtiments</li>
+<li>Carte satellite : déplacement possible aussi au clic molette, en plus du</li>
+<li>Géoréférencement d&#x27;un plan : calage par clic direct sur la carte satellite</li>
+<li>Réception (Environnement) : import du résiduel externe via l&#x27;assistant CMG</li>
+<li>Bâtiment : le bouton « Nouveau projet » réinitialise maintenant bien tout</li>
+        </ul>
+      </article>
+  </main>
+  <footer>
+    Généré depuis <code>CHANGELOG.md</code> —
+    <a href="https://github.com/chesam98/dbnext-desktop-releases/releases">toutes les releases</a>
+  </footer>
+</body>
+</html>
